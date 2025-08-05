@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Matter: Speak Out, Stand Up
+Your voice is your power. Use it to protect, not to hurt.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Social+Insight&display=swap'); /* Update this line with the correct font URL */
+    
+    body {
+      font-family: 'Social Insight', sans-serif; /* Change to Social Insight */
+      background-color: black; /* Set background to black */
+      color: white; /* Set text color to white for better contrast */
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .hero-image {
+      height: 60vh;
+      min-height: 400px;
+      background-size: cover;
+      background-position: center;
+      transition: opacity 0.3s;
+    }
+    
+    .hero-image:hover {
+      opacity: 0.9;
+    }
+    
+    .article-content {
+      max-width: 800px;
+    }
+    
+    .article-content p {
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+    
+    .article-content h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px -3px rgba(8, 8, 8, 0.1);
+    }
+    
+    .tag:hover {
+      background-color: #0c0c0c;
+      color: rgb(247, 245, 245);
+    }
+    
+    #darkModeToggle:checked ~ label {
+      background-color: #0c0c0c;
+    }
+    
+    #darkModeToggle:checked ~ label span {
+      transform: translateX(24px);
+      background-color: rgb(250, 250, 250);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">Home</a>
+          <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">Articles</a>
+          <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">About</a>
+          <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
+        </div>
+      </div>
+      
+      <div class="flex items-center space-x-4">
+        <input type="checkbox" id="darkModeToggle" class="hidden">
+        <label for="darkModeToggle" class="relative w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full cursor-pointer transition duration-300">
+          <span class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition duration-300"></span>
+        </label>
+        <button class="md:hidden text-xl">
+          <i class="fas fa-bars"></i>
+        </button>s
+        <button class="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">
+          Subscribe
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <div class="hero-image relative">
+      <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t1.15752-9/509387104_23989378677391272_3863310397266446075_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeH2gsJM0_wbesYgwiz4zWr83a8ca2hNag3drxxraE1qDX7vKmM_Xhajmi2AdH5wrKhd_o_oK2bdY40TJcNeE6FO&_nc_ohc=dxp6hKKU-AIQ7kNvwGWFfLM&_nc_oc=Adk09iVFlvSpbDaD5c8D5noIyIjLKudXUJ8RMU6FextSki3SvnFoFTz_hyE62z8uBg0&_nc_zt=23&_nc_ht=scontent.fmnl30-3.fna&oh=03_Q7cD3AE4ZinZs8bS8Yv8VXUEQzObTW_BBq_zi9Ne7eicgyosyQ&oe=68B7EF4E" alt="New image description" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+        <div class="text-center px-4 max-w-4xl">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">You Matter: Speak Out, Stand Up
+Your voice is your power. Use it to protect, not to hurt.</h1>
+          <div class="flex justify-center space-x-4 text-gray-300">
+            <span>By <a href="#" class="text-white hover:underline"> Group 1</a></span>
+            <span>•</span>
+            <span>August 4, 2025</span>
+            <span>•</span>
+            <span>Arlene Aroma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article Content -->
+    <section class="container mx-auto px-4 py-16 max-w-6xl">
+      <div class="flex flex-col lg:flex-row gap-12">
+        <article class="article-content flex-1">
+          <div class="prose dark:prose-invert max-w-none">
+            <div class="flex flex-wrap gap-2 mb-8">
+              <span class="tag bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm transition">Psychology</span>
+              <span class="tag bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm transition">Education</span>
+              <span class="tag bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm transition">Social Issues</span>
+            </div>
+            
+            <p class="text-xl font-medium text-gray-300 mb-8">Bullying is more than just harsh words or physical harm it’s a deep, lingering pain that often goes unseen. It happens when someone uses their power to hurt, isolate, or belittle others, whether through loud insults or silent exclusion. Its impact can last for years, shaping how people see themselves and the world.</p>          
+            <p class="text-xl font-medium text-gray-300 mb-8">To truly address bullying, we must begin with empathy, courage, and a commitment to making everyone feel safe, valued, and respected</p>
+            <p class="text-3xl font-bold text-white-300 mb-8">What is Bullying?</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Bullying is when people repeatedly and intentionally use words or actions against someone or a group of people to cause distress and risk to their wellbeing. These actions are usually done by people who have more influence or power over someone else, or who want to make someone else feel less powerful or helpless.</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Bullying is not the same as conflict between people (like having a fight) or disliking someone, even though people might bully each other because of conflict or dislike.</p>
+            
+            
+            <p class="text-3xl font-bold text-white-300 mb-8">Types of Bullying</p>
+
+
+            <p class="text-2xl font-bold text-gray-300 mb-8">• Social Bullying</p>
+            <p class="text-2xl font-medium text-gray-300 mb-8">Examples:</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Excluding someone from a group on purpose</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Spreading rumors or gossip</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Humiliating someone in front of others</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Manipulating friendships to isolate someone It's like being erased from your own story while everyone else gets to write the chapters.</p>
+
+            <p class="text-2xl font-bold text-gray-300 mb-8">• Cyberbullying</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">This unfolds online or through digital devices. It’s not confined to a school hallway or café corner—it's potentially everywhere, anytime.</p>
+            <p class="text-2xl font-medium text-gray-300 mb-8">Examples:</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Posting or sharing embarrassing photos or videos</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Sending threatening or hurtful messages</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Creating fake profiles to mock someone</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Doxxing: revealing personal info without consent</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">It turns a screen into a silent weapon—one that hides behind anonymity but still wounds loudly.</p>
+
+            <p class="text-2xl font-bold text-gray-300 mb-8">• Physical Bullying</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">This involves using force or aggression to hurt someone physically. It's direct, often visible, but its effects go deeper than bruises.</p>
+            <p class="text-2xl font-medium text-gray-300 mb-8">Examples:</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Hitting, punching, or kicking</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Pushing or tripping someone on purpose</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Taking or destroying someone’s belongings</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Using physical intimidation to control someone</p>
+
+
+            <p class="text-2xl font-bold text-gray-300 mb-8">• Verbal Bullying</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">This form uses words to wound, humiliate, or break someone's confidence. It may not leave marks on the skin, but it can leave lifelong scars on the heart.</p>
+            <p class="text-2xl font-medium text-gray-300 mb-8">Examples:</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Name-calling or insults</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Teasing or mocking someone’s appearance, voice, or abilities</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">* Threatening or making hurtful jokes</p>
+
+            <p class="text-3xl font-bold text-white-300 mb-8">Cause of Bullying</p>
+
+
+            <p class="text-2xl font-bold text-gray-300 mb-8">Personal Factors</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">1. Low self-esteem – Bullies may pick on others to feel powerful or better about themselves.</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">2. Desire for attention or control – Some bully to gain popularity or assert dominance.</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">3. Insecurity or jealousy – They may target others they envy or see as different.</p>
+
+            <p class="text-2xl font-medium text-gray-300 mb-8">Family Influence</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">1. Lack of parental guidance – Little supervision can lead to bad behavior.</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">2. Exposure to violence at home – Children from abusive households may imitate what they see.</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">3. Neglect or emotional rejection – Feeling unloved can make someone lash out at others.</p>
+
+            <p class="text-2xl font-medium text-gray-300 mb-8">Peer Pressure & Social Environment</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">1. Pressure to fit in – Some bully to avoid being bullied themselves or to join a group.</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">2. Toxic friend groups – Being part of a group that encourages bullying behavior.</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">3. Social status competition – Bullies may want to climb the social ladder by putting others down.</p>
+
+            <p class="text-2xl font-medium text-gray-300 mb-8">School and Society</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">1. Poor school climate – Lack of rules or weak discipline allows bullying to grow.</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">2. Cultural or societal norms – Environments that tolerate discrimination or hate can fuel bullying.</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">3. Online anonymity – Cyberbullying thrives when people feel they won’t be caught.</p>
+
+            <p class="text-3xl font-bold text-white-300 mb-8">Effects of Bullying</p>
+
+
+            <p class="text-2xl font-bold text-gray-300 mb-8">- Emotional Impact</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Bullying can deeply affect a person’s emotions. Victims often feel sad, anxious, or alone. Over time, this can lower their self-esteem and confidence. Many begin to doubt their worth, and some may experience depression or emotional breakdowns. The emotional pain can last even after the bullying stops.</p>
+            <p class="text-2xl font-bold text-gray-300 mb-8">- Physical Health Problems</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Bullying doesn’t just hurt feelings—it can hurt the body too. Some people get headaches, stomach aches, or feel tired all the time from stress. Others may stop eating or sleeping well. In some cases, physical bullying causes real injuries.</p>
+            <p class="text-2xl font-bold text-gray-300 mb-8">- Academic Issues</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Students who are bullied often struggle in school. They may find it hard to focus, leading to lower grades. Some feel unsafe or uncomfortable at school, which can cause them to skip classes or avoid school entirely. This affects their learning and future opportunities.</p>
+            <p class="text-2xl font-bold text-gray-300 mb-8">- Social Consequences</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Bullying can make it difficult for someone to connect with others. Victims may feel isolated and start to avoid social situations. They might lose trust in people and struggle to form new friendships. This social withdrawal can lead to feelings of loneliness and fear.</p>
+            <p class="text-2xl font-bold text-gray-300 mb-8">- Long-Term Effects</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">The effects of bullying can last a long time. Some carry the hurt into adulthood, still struggling with fear, low self-esteem, or mental health issues. That’s why stopping bullying matters—because everyone deserves to feel safe, seen, and supported.</p>
+
+            
+            <p class="text-3xl font-bold text-white-300 mb-8">How to Prevent Bullying</p>
+
+
+            <p class="text-2xl font-medium text-gray-300 mb-8">How can I help prevent bullying?</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">The first step to keeping your child safe, whether in-person or online, is making sure they know the issue.</p>
+            <p class="text-2xl font-medium text-gray-300 mb-8">1. Educate your children about bullying</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Once they know what bullying is, your children will be able to identify it more easily, whether it is happening to them or someone else.</p>
+            <p class="text-2xl font-medium text-gray-300 mb-8">2. Talk openly and frequently to your children</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">The more you talk to your children about bullying, the more comfortable they will be telling you if they see or experience it. Check in with your children daily and ask about their time at school and their activities online, inquiring not only about their classes and activities, but also about their feelings.</p>
+            <p class="text-2xl font-medium text-gray-300 mb-8">3. Help your child be a positive role model</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">There are three parties to bullying: the victim, the perpetrator and the bystander. Even if children are not victims of bullying, they can prevent bullying by being inclusive, respectful and kind to their peers. If they witness bullying, they can stick up for the victim, offer support, and/or question bullying behaviours.</p>
+            <p class="text-2xl font-medium text-gray-300 mb-8">4. Help build your child’s self confidence</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Encourage your child to enrol in classes or join activities they love in your community. This will also help build confidence as well as a group of friends with shared interests.</p>
+            <p class="text-2xl font-medium text-gray-300 mb-8">5. Be a role model</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Show your child how to treat other children and adults with kindness and respect by doing the same to the people around you, including speaking up when others are being mistreated. Children look to their parents as examples of how to behave, including what to post online.</p>
+            <p class="text-2xl font-medium text-gray-300 mb-8">6. Be part of their online experience</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Familiarize yourself with the platforms your child uses, explain to your child how the online and the offline world are connected, and warn them about the different risks they’ll face online.</p>
+
+
+           
+            <div style="text-align: center;">
+            <p>
+            <p class="text-3xl font-bold text-white-300 mb-8">Resources & Help</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">💼 School-Based Help</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">School Guidance Counselor</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Visit your school’s guidance office for confidential help and support.</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Teachers / Class Adviser</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">You can always talk to a trusted teacher or adviser if you need help.</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">💻 Online Resources</p>
+            <p class="text-xl font-medium text-gray-300 mb-8"><a href="URL">www.stopbullying.gov</a></p>
+            <p class="text-xl font-medium text-gray-300 mb-8">☎️ National Helplines</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Bantay Bata 163</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">➤ For children needing help or rescue</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">➤ Toll-free hotline in the Philippines</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">> 📞 Call: 163</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">National Mental Health Crisis Hotline</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">➤ For emotional support or psychological assistance</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">> 📞 Call: 1553 (landline and mobile, free)</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Globe/TM: 0966-351-4518</p>
+            <p class="text-xl font-medium text-gray-300 mb-8">Smart/TNT: 0908-639-2672</p>
+            </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
